@@ -14,6 +14,13 @@ function App() {
       console.log(employeeData)
     })();
   }, []);
+
+
+  return (
+    <div className="App">
+      <Table columns={columns} data={data} />
+    </div>
+  );
 }
 
 export default App;
