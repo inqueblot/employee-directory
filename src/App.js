@@ -19,7 +19,7 @@ function App() {
   const columns = useMemo(
     () => [
       {
-        Header: "EMPLOYEE DIRECTORY",
+        Header: "Employee Directory (click column head to sort)",
         columns: [
           {
             Header: "Photo",
@@ -84,7 +84,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* "hello world" */}
+      <h1>EMPLOYEE DIRECTORY</h1>
       <Table columns={columns} data={data} />
     </div>
   );
