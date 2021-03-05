@@ -1,5 +1,6 @@
 {
-  "name": "test-app",
+  "homepage": "https://inqueblot.github.io/employee-directory",
+  "name": "employee_directory",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,7 +9,6 @@
     "@testing-library/user-event": "^12.8.1",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
-    "gh-pages": "^3.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
@@ -39,7 +39,9 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ],
-    "homepage": "https://inqueblot.github.io/employee-directory"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
