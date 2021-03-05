@@ -8,8 +8,8 @@ function App() {
 
   useEffect(() => {
     (async () => {
-      const result = await axios("https://randomuser.me/api/?results=5");
-      console.log(result.data.results)
+      const result = await axios("https://randomuser.me/api/?results=25");
+      // console.log(result.data.results)
       setData(result.data.results)
 
 
@@ -46,16 +46,34 @@ function App() {
             Header: "Address",
             accessor: "location",
             Cell: ({ cell: { value } }) => {
-              console.log(value)
+              // console.log(value)
               return (
-                <text>
+                <>
                   {`${value.street.number} ${value.street.name}\n${value.city}, ${value.state} ${value.postcode}\n${value.country}`}
-                </text>
+                </>
               )
             }
           },
           {
-            Header: ""
+            Header: "email",
+            accessor: "email"
+          },
+          {
+            Header: "birthday",
+            accessor: "dob",
+            Cell: ({ cell: { value } }) => {
+              let bDate = new Date(value.date);
+              let year = bDate.getFullYear();
+              let month = (bDate.getMonth()) + 1;
+              let day = (bDate.getDate())
+              return (
+                <>{`${month}/${day}/${year}`}</>
+              )
+            }
+          },
+          {
+            Header: "Age",
+            accessor: "dob.age"
           }
         ]
       }
