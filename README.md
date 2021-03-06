@@ -1,6 +1,6 @@
-# Budget Tracker
+# Employee Directory
 
-![badge](https://img.shields.io/github/license/inqueblot/employee_tracker) ![badge](https://img.shields.io/depfu/inqueblot/budget_tracker)
+![badge](https://img.shields.io/github/license/inqueblot/employee_tracker) ![badge](https://img.shields.io/depfu/inqueblot/employee-directory)
 
 # Table of Contents
 
